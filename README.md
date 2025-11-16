@@ -97,9 +97,7 @@ graph TD
     E --> C
     D -->|Yes| F[Step 2: Collect Customer Profile]
     F --> G[Enter: Engagement Score, Purchase Interest, Amount, Rating]
-    G --> H[Step 3: Voice Verification]
-    H --> I{Voice Matches Face?}
-    I -->|No| J[ACCESS DENIED]
+    G --> I[Step 3: Voice Verification]
     I -->|Yes| K{Voice Confidence ≥ 80%?}
     K -->|No| L[Retry or Exit]
     L --> H
